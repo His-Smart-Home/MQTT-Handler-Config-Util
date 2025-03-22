@@ -5,7 +5,7 @@ Public Class Form1
     End Sub
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
-            Dim baseKey As RegistryKey = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64)
+            Dim baseKey As RegistryKey = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry32)
             Dim subKey As RegistryKey = baseKey.OpenSubKey("Software\His Smart Home\MQTT-Listener")
 
             If subKey IsNot Nothing Then
