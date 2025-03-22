@@ -33,9 +33,12 @@ Partial Class Form1
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.btnSave = New System.Windows.Forms.Button()
+        Me.txtClientId = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.chkTLS = New System.Windows.Forms.CheckBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -128,15 +131,6 @@ Partial Class Form1
         Me.Label4.TabIndex = 10
         Me.Label4.Text = "Password"
         '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(172, 209)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(29, 13)
-        Me.Label5.TabIndex = 12
-        Me.Label5.Text = "URL"
-        '
         'Label6
         '
         Me.Label6.AutoSize = True
@@ -148,18 +142,56 @@ Partial Class Form1
         '
         'btnSave
         '
-        Me.btnSave.Location = New System.Drawing.Point(105, 259)
+        Me.btnSave.Location = New System.Drawing.Point(121, 259)
         Me.btnSave.Name = "btnSave"
-        Me.btnSave.Size = New System.Drawing.Size(75, 23)
+        Me.btnSave.Size = New System.Drawing.Size(48, 23)
         Me.btnSave.TabIndex = 13
         Me.btnSave.Text = "Save"
         Me.btnSave.UseVisualStyleBackColor = True
+        '
+        'txtClientId
+        '
+        Me.txtClientId.Location = New System.Drawing.Point(175, 259)
+        Me.txtClientId.Name = "txtClientId"
+        Me.txtClientId.Size = New System.Drawing.Size(100, 20)
+        Me.txtClientId.TabIndex = 14
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(172, 209)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(29, 13)
+        Me.Label5.TabIndex = 12
+        Me.Label5.Text = "URL"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(172, 246)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(64, 13)
+        Me.Label7.TabIndex = 15
+        Me.Label7.Text = "Client Name"
+        '
+        'chkTLS
+        '
+        Me.chkTLS.AutoSize = True
+        Me.chkTLS.Location = New System.Drawing.Point(24, 259)
+        Me.chkTLS.Name = "chkTLS"
+        Me.chkTLS.Size = New System.Drawing.Size(68, 17)
+        Me.chkTLS.TabIndex = 18
+        Me.chkTLS.Text = "Use TLS"
+        Me.chkTLS.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(287, 294)
+        Me.Controls.Add(Me.chkTLS)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.txtClientId)
         Me.Controls.Add(Me.btnSave)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label6)
@@ -194,7 +226,10 @@ Partial Class Form1
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents btnSave As Button
+    Friend WithEvents txtClientId As TextBox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents chkTLS As CheckBox
 End Class
