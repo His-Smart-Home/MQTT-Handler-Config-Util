@@ -5,6 +5,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{1A47DFCD-E61C-4B79-BD5D-BAF4D10CBAAF}|mqtt-handler-config-util.vbproj|e:\\his smart home\\programs\\mqtt handler\\mqtt-handler-config-util\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{1A47DFCD-E61C-4B79-BD5D-BAF4D10CBAAF}|mqtt-handler-config-util.vbproj|solutionrelative:form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A47DFCD-E61C-4B79-BD5D-BAF4D10CBAAF}|mqtt-handler-config-util.vbproj|e:\\his smart home\\programs\\mqtt handler\\mqtt-handler-config-util\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{1A47DFCD-E61C-4B79-BD5D-BAF4D10CBAAF}|mqtt-handler-config-util.vbproj|solutionrelative:form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +18,25 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.vb",
+              "DocumentMoniker": "E:\\His Smart Home\\Programs\\MQTT Handler\\mqtt-handler-config-util\\Form1.vb",
+              "RelativeDocumentMoniker": "Form1.vb",
+              "ToolTip": "E:\\His Smart Home\\Programs\\MQTT Handler\\mqtt-handler-config-util\\Form1.vb",
+              "RelativeToolTip": "Form1.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-03-22T22:40:39.174Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -27,10 +48,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-03-22T22:36:32.227Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }
