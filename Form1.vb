@@ -5,34 +5,48 @@ Public Class Form1
     End Sub
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
+            ' Use 32-bit view (WOW6432Node)
             Dim baseKey As RegistryKey = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry32)
-            Dim subKey As RegistryKey = baseKey.OpenSubKey("Software\His Smart Home\MQTT-Listener")
+            Dim subKey As RegistryKey = baseKey.OpenSubKey("Software\His Smart Home\MQTT-Listener", True)
 
-            If subKey IsNot Nothing Then
-                txtServer.Text = CStr(subKey.GetValue("Server", ""))
-                txtPort.Text = CStr(subKey.GetValue("Port", "1883")) ' Default MQTT port
-                txtUsername.Text = CStr(subKey.GetValue("Username", ""))
-                txtPassword.Text = CStr(subKey.GetValue("Password", ""))
-                txtTopic.Text = CStr(subKey.GetValue("Topic", ""))
-                txtUrl.Text = CStr(subKey.GetValue("UrlToOpen", ""))
-                txtClientId.Text = CStr(subKey.GetValue("ClientId", ""))
-
-                Dim tlsValue As Integer = CInt(subKey.GetValue("UseTLS", 0))
-                chkTLS.Checked = (tlsValue = 1)
-
-                subKey.Close()
-                baseKey.Close()
+            ' If key doesn't exist, create it with sample/default values
+            If subKey Is Nothing Then
+                subKey = baseKey.CreateSubKey("Software\His Smart Home\MQTT-Listener", True)
+                subKey.SetValue("Server", "broker.example.com", RegistryValueKind.String)
+                subKey.SetValue("Port", 1883, RegistryValueKind.DWord)
+                subKey.SetValue("Username", "myuser", RegistryValueKind.String)
+                subKey.SetValue("Password", "mypassword", RegistryValueKind.String)
+                subKey.SetValue("Topic", "my/topic/path", RegistryValueKind.String)
+                subKey.SetValue("UrlToOpen", "https://example.com", RegistryValueKind.String)
+                subKey.SetValue("UseTLS", 0, RegistryValueKind.DWord)
+                subKey.SetValue("ClientId", "sample-client-id", RegistryValueKind.String)
             End If
 
+            ' Prefill form fields with existing (or just-created) values
+            txtServer.Text = CStr(subKey.GetValue("Server", ""))
+            txtPort.Text = CStr(subKey.GetValue("Port", "1883"))
+            txtUsername.Text = CStr(subKey.GetValue("Username", ""))
+            txtPassword.Text = CStr(subKey.GetValue("Password", ""))
+            txtTopic.Text = CStr(subKey.GetValue("Topic", ""))
+            txtUrl.Text = CStr(subKey.GetValue("UrlToOpen", ""))
+            txtClientId.Text = CStr(subKey.GetValue("ClientId", ""))
+
+            Dim tlsValue As Integer = CInt(subKey.GetValue("UseTLS", 0))
+            chkTLS.Checked = (tlsValue = 1)
+
+            subKey.Close()
+            baseKey.Close()
+
         Catch ex As Exception
-            MessageBox.Show("Error loading settings: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("Error loading or creating settings: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
+
 
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
         Try
             ' Open the 64-bit view of HKLM
-            Dim baseKey As RegistryKey = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64)
+            Dim baseKey As RegistryKey = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry32)
             Dim subKey As RegistryKey = baseKey.CreateSubKey("Software\His Smart Home\MQTT-Listener", True)
 
             If subKey IsNot Nothing Then

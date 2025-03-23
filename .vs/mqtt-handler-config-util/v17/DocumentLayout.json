@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "E:\\His Smart Home\\Programs\\MQTT Handler\\mqtt-handler-config-util\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1A47DFCD-E61C-4B79-BD5D-BAF4D10CBAAF}|mqtt-handler-config-util.vbproj|E:\\His Smart Home\\Programs\\MQTT Handler\\mqtt-handler-config-util\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "AbsoluteMoniker": "D:0:0:{1A47DFCD-E61C-4B79-BD5D-BAF4D10CBAAF}|mqtt-handler-config-util.vbproj|e:\\his smart home\\programs\\mqtt handler\\mqtt-handler-config-util\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{1A47DFCD-E61C-4B79-BD5D-BAF4D10CBAAF}|mqtt-handler-config-util.vbproj|solutionrelative:form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
@@ -12,9 +12,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1A47DFCD-E61C-4B79-BD5D-BAF4D10CBAAF}|mqtt-handler-config-util.vbproj|E:\\His Smart Home\\Programs\\MQTT Handler\\mqtt-handler-config-util\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{1A47DFCD-E61C-4B79-BD5D-BAF4D10CBAAF}|mqtt-handler-config-util.vbproj|solutionrelative:form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A47DFCD-E61C-4B79-BD5D-BAF4D10CBAAF}|mqtt-handler-config-util.vbproj|e:\\his smart home\\programs\\mqtt handler\\mqtt-handler-config-util\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|eda661ea-dc61-4750-b3a5-f6e9c74060f5"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,8 +32,7 @@
               "ToolTip": "E:\\His Smart Home\\Programs\\MQTT Handler\\mqtt-handler-config-util\\mqtt-handler-config-util.vbproj",
               "RelativeToolTip": "mqtt-handler-config-util.vbproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-03-22T23:26:57.367Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-22T23:26:57.367Z"
             },
             {
               "$type": "Document",
@@ -46,7 +42,7 @@
               "RelativeDocumentMoniker": "Form1.vb",
               "ToolTip": "E:\\His Smart Home\\Programs\\MQTT Handler\\mqtt-handler-config-util\\Form1.vb",
               "RelativeToolTip": "Form1.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABzAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-03-22T22:40:39.174Z",
               "EditorCaption": ""
@@ -60,8 +56,7 @@
               "ToolTip": "E:\\His Smart Home\\Programs\\MQTT Handler\\mqtt-handler-config-util\\Form1.vb [Design]",
               "RelativeToolTip": "Form1.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-03-22T22:36:32.227Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-03-22T22:36:32.227Z"
             }
           ]
         }
